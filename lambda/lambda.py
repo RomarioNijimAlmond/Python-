@@ -13,3 +13,15 @@ print(add(2))
 
 add_two_nums = lambda a,b : a + b
 print(add_two_nums(5,6))
+
+def func_builder(param):
+    return lambda num : num + param
+
+add_ten = func_builder(10)
+add_twenty = func_builder(20)
+
+print(add_ten(10))
+print(add_twenty(30))
+
+print(add_ten(1))
+print(add_twenty(7))
