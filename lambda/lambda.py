@@ -11,6 +11,9 @@ print(addTwo(5))
 
 print(add(2))
 
+# similar to js arrow function = 
+# const addTwoNums = (a,b) => a + b
+
 add_two_nums = lambda a,b : a + b
 print(add_two_nums(5,6))
 
