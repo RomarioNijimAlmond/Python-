@@ -1,6 +1,7 @@
 import requests
 from dotenv import load_dotenv
 import os 
+from pprint import pprint
 
 
 load_dotenv()
@@ -13,7 +14,8 @@ def get_current_weather():
     # print(request_url)
 
     weather_data = requests.get(request_url).json()
-    print(weather_data)
+    pprint(weather_data)
+    print(f"the current weather feels like {weather_data['main']['feels_like']}")
 
 
 

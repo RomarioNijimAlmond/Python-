@@ -13,3 +13,8 @@ def countNumber(num1: int, num2: int):
 
 print(countNumber(2, 2))
 print(countNumber(1, 2))
+
+name = "john"
+
+print(name.capitalize())
+print(name.upper())
