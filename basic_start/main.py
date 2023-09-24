@@ -18,3 +18,11 @@ name = "john"
 
 print(name.capitalize())
 print(name.upper())
+
+
+from faker import Faker 
+
+fake = Faker()
+
+fake_name = fake.name()
+print(fake_name)
